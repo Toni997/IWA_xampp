@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^image/([0-9a-z-]+)$ image.py?id=$1 [NC,L]
+
+RewriteRule ^([^\.]+)$ $1.py [NC,L]
+
+ErrorDocument 404 /iwa/404.py
