@@ -1,5 +1,7 @@
 #!C:\Users\tkazinoti\AppData\Local\Programs\Python\Python310\python.exe
+import os
 print("Content-Type: text/html\r\n\r\n")
+print(os.getenv('QUERY_STRING'))
 
 print("""
 <form id="add-image-form" method="POST" action="./post.py" enctype="multipart/form-data">

@@ -1,9 +1,10 @@
 #!C:\Users\tkazinoti\AppData\Local\Programs\Python\Python310\python.exe
 from database import cursor, db
 import mysql.connector
-import cgi
+import cgi, sys
 
 print("Content-Type: text/html\r\n\r\n")
+print(sys.stdin.read())
 
 form = cgi.FieldStorage()
 try:
